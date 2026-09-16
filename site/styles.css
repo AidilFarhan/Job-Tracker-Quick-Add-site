@@ -12,4 +12,24 @@ h1,h2 { line-height:1.08; letter-spacing:-.055em; margin:0; } h1 { font-size:cla
 .data { display:grid; grid-template-columns:1fr 1fr; gap:72px; margin:88px 0; align-items:center; }.data h2 { font-size:2.4rem; }.data>p { margin:0; }
 footer { min-height:100px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:.9rem; } footer span:last-child { display:flex; gap:20px; }
 .legal { max-width:780px; padding-top:52px; padding-bottom:72px; }.legal h1 { font-size:clamp(2.7rem,6vw,4.6rem); }.legal h2 { font-size:1.38rem; letter-spacing:-.03em; margin-top:42px; }.legal p,.legal li { color:var(--muted); }.legal .updated { margin-top:10px; color:var(--muted); }
+.tutorial { scroll-margin-top:28px; }
+.tutorial-heading { max-width:740px; margin-bottom:32px; }
+.tutorial-heading>p:last-child,.tutorial-steps p { color:var(--muted); }
+.tutorial-steps { list-style:none; counter-reset:tutorial; padding:0; margin:0; display:grid; gap:20px; }
+.tutorial-steps>li { counter-increment:tutorial; position:relative; padding:32px 32px 32px 92px; background:white; border:1px solid var(--line); border-radius:16px; min-width:0; }
+.tutorial-steps>li::before { content:counter(tutorial, decimal-leading-zero); position:absolute; left:28px; top:28px; width:42px; height:42px; display:grid; place-items:center; border-radius:50%; background:var(--mint); color:var(--ink); font-size:.85rem; font-weight:800; }
+.tutorial-steps h3 { margin:2px 0 12px; font-size:1.35rem; line-height:1.3; letter-spacing:-.03em; }
+.tutorial-steps p { margin:12px 0 0; }
+.tutorial-steps strong { color:var(--ink); }
+.tutorial-steps p a { color:var(--accent); }
+.sheet-example { padding:16px; background:var(--paper); border-radius:8px; }
+.sheet-example span { display:block; margin-bottom:8px; font-size:.85rem; }
+.sheet-example code { font-size:.85rem; overflow-wrap:anywhere; }
+.sheet-example mark { background:var(--mint); color:var(--ink); font-weight:700; }
+.tutorial-steps figure { margin:24px 0 0; }
+.tutorial-steps figure a { display:block; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+.tutorial-steps img { display:block; width:100%; height:auto; }
+.tutorial-steps figcaption { margin-top:10px; color:var(--muted); font-size:.85rem; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+@media (max-width:700px) { .tutorial-steps>li { padding:24px 20px; }.tutorial-steps>li::before { position:static; margin-bottom:16px; }.tutorial-heading { margin-bottom:24px; } }
 @media (max-width:700px) { main,footer { padding-left:20px; padding-right:20px; }.hero { padding:55px 0; }.grid,.data { grid-template-columns:1fr; }.grid article+article { border-left:0; border-top:1px solid var(--line); }.data { gap:22px; margin:55px 0; } footer { padding-top:24px; padding-bottom:24px; align-items:flex-start; flex-direction:column; gap:12px; } }
