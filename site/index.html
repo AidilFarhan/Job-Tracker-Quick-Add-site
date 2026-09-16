@@ -21,22 +21,48 @@
         <a class="button" href="https://chromewebstore.google.com/detail/job-tracker-quick-add/plkhmignapibfhoppbkebpndckjbjpmg">Get the extension</a>
       </section>
 
-      <section class="grid" aria-label="How it works">
-        <article>
-          <p class="number">01</p>
-          <h2>Open a job posting</h2>
-          <p>Click the extension while viewing a job page. It reads the page title and relevant job metadata to suggest the company and role.</p>
-        </article>
-        <article>
-          <p class="number">02</p>
-          <h2>Choose your sheet</h2>
-          <p>Connect your Google account and select the spreadsheet tab where you track your applications.</p>
-        </article>
-        <article>
-          <p class="number">03</p>
-          <h2>Save and continue</h2>
-          <p>Add your application date and save. The job is added to your chosen Google Sheet with status and source fields.</p>
-        </article>
+      <section class="tutorial" id="how-to-use" aria-labelledby="tutorial-title">
+        <header class="tutorial-heading">
+          <p class="eyebrow">A simple guide</p>
+          <h2 id="tutorial-title">How to use this extension?</h2>
+          <p>Set up your own Google Sheet once, then save job postings as you browse.</p>
+        </header>
+        <ol class="tutorial-steps">
+          <li>
+            <h3>Add to Chrome</h3>
+            <p>Open <a href="https://chromewebstore.google.com/detail/job-tracker-quick-add/plkhmignapibfhoppbkebpndckjbjpmg">Job Tracker Quick Add in the Chrome Web Store</a> and click <strong>Add to Chrome</strong>. Pin the extension from Chrome's Extensions menu so it is easy to find.</p>
+          </li>
+          <li>
+            <h3>Connect your own spreadsheet</h3>
+            <p>Make sure you have your own Google Sheet. Copy its link, then open the extension and click <strong>Settings</strong>. Paste the part of the link between <strong>/d/</strong> and <strong>/edit</strong> into <strong>Google Sheet ID</strong>.</p>
+            <p class="sheet-example"><span>Where to find your Sheet ID:</span><code>docs.google.com/spreadsheets/d/<mark>YOUR_SHEET_ID</mark>/edit</code></p>
+            <p>Connect your Google account when prompted, choose the spreadsheet tab for your applications, and click <strong>Save Settings</strong>.</p>
+          </li>
+          <li>
+            <h3>Open a job posting</h3>
+            <p>Go to LinkedIn, JobStreet, or Indeed and open the job posting you want to track. Stay on the individual job page so the extension can capture its link.</p>
+          </li>
+          <li>
+            <h3>Click the extension</h3>
+            <p>Click the Job Tracker Quick Add icon in your Chrome toolbar. Check the job link and enter your application date, or leave it blank to fill in later in your sheet.</p>
+            <figure>
+              <a href="images/open-extension.png" target="_blank" rel="noopener" aria-label="View the extension screenshot at full size (opens in a new tab)"><img src="images/open-extension.png" alt="Job Tracker extension open on a JobStreet posting, with the job link and application date filled in." width="1659" height="1027" loading="lazy"></a>
+              <figcaption>Open the extension while viewing the job you want to save. Click the image to enlarge.</figcaption>
+            </figure>
+          </li>
+          <li>
+            <h3>Click Save to Tracker</h3>
+            <p>Click <strong>Save to Tracker</strong> and wait for the <strong>Saved to tracker!</strong> message. Open your Google Sheet to see the new entry.</p>
+            <figure>
+              <a href="images/saved-to-tracker.png" target="_blank" rel="noopener" aria-label="View the save confirmation screenshot at full size (opens in a new tab)"><img src="images/saved-to-tracker.png" alt="The extension displays Saved to tracker! after saving the JobStreet posting." width="1658" height="1020" loading="lazy"></a>
+              <figcaption>The confirmation message lets you know your job has been saved.</figcaption>
+            </figure>
+            <figure>
+              <a href="images/spreadsheet-result.png" target="_blank" rel="noopener" aria-label="View the spreadsheet screenshot at full size (opens in a new tab)"><img src="images/spreadsheet-result.png" alt="Google Sheet showing the saved Magnum 4D Berhad application with its date, role, job link, Applied status, and JobStreet source." width="1675" height="847" loading="lazy"></a>
+              <figcaption>Your saved application appears as a new row in your own Google Sheet.</figcaption>
+            </figure>
+          </li>
+        </ol>
       </section>
 
       <section class="data">
