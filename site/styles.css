@@ -29,7 +29,14 @@ footer { min-height:100px; border-top:1px solid var(--line); display:flex; justi
 .tutorial-steps figure { margin:24px 0 0; }
 .tutorial-steps figure a { display:block; border:1px solid var(--line); border-radius:6px; overflow:hidden; }
 .tutorial-steps img { display:block; width:100%; height:auto; }
+.compare { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:24px; }
+.compare-item { position:relative; margin:0; }
+.compare .compare-item { margin:0; }
+.compare-badge { position:absolute; top:10px; left:10px; z-index:1; padding:4px 10px; border-radius:999px; color:white; font-size:.78rem; font-weight:800; }
+.badge-correct { background:#176b35; }
+.badge-wrong { background:#982b2b; }
+.compare-item figcaption { margin-top:8px; color:var(--muted); font-size:.85rem; }
 .tutorial-steps figcaption { margin-top:10px; color:var(--muted); font-size:.85rem; }
 a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
-@media (max-width:700px) { .tutorial-steps>li { padding:24px 20px; }.tutorial-steps>li::before { position:static; margin-bottom:16px; }.tutorial-heading { margin-bottom:24px; } }
+@media (max-width:700px) { .tutorial-steps>li { padding:24px 20px; }.tutorial-steps>li::before { position:static; margin-bottom:16px; }.tutorial-heading { margin-bottom:24px; }.compare { grid-template-columns:1fr; } }
 @media (max-width:700px) { main,footer { padding-left:20px; padding-right:20px; }.hero { padding:55px 0; }.grid,.data { grid-template-columns:1fr; }.grid article+article { border-left:0; border-top:1px solid var(--line); }.data { gap:22px; margin:55px 0; } footer { padding-top:24px; padding-bottom:24px; align-items:flex-start; flex-direction:column; gap:12px; } }
