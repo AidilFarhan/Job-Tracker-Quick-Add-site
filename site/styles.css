@@ -4,7 +4,7 @@ body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.6 Arial,
 main, footer { max-width:1080px; margin:auto; padding-left:28px; padding-right:28px; }
 nav { min-height:92px; display:flex; align-items:center; justify-content:space-between; }
 a { color:inherit; text-underline-offset:3px; }
-.brand { display:inline-flex; align-items:center; font-weight:800; text-decoration:none; letter-spacing:-.04em; font-size:1.15rem; }.brand-mark { display:inline-block; width:23px; height:26px; margin-right:8px; text-align:center; color:white; background:#252d37; border-radius:5px; font:700 29px/26px Georgia, serif; }.brand-accent { color:var(--accent); }
+.brand { display:inline-flex; align-items:center; font-weight:800; text-decoration:none; letter-spacing:-.04em; font-size:1.15rem; }.brand-mark { display:inline-block; width:23px; height:26px; margin-right:8px; text-align:center; color:white; background:#252d37; border-radius:5px; font:700 29px/26px Georgia, serif; }.brand-accent { color:var(--accent); }.brand-name { font-weight:400; }.google-sheet { color:rgb(15,157,88); }
 .hero { padding:88px 0 82px; max-width:800px; }.eyebrow,.number { color:var(--accent); font-weight:800; letter-spacing:.11em; text-transform:uppercase; font-size:.73rem; }
 h1,h2 { line-height:1.08; letter-spacing:-.055em; margin:0; } h1 { font-size:clamp(3rem,8vw,6.25rem); } h2 { font-size:clamp(1.9rem,4vw,3.2rem); }
 .lede { font-size:1.18rem; color:var(--muted); max-width:610px; margin:30px 0; }.button { display:inline-block; color:white; background:var(--accent); text-decoration:none; padding:13px 19px; border-radius:6px; font-weight:700; }
@@ -17,12 +17,12 @@ footer { min-height:100px; border-top:1px solid var(--line); display:flex; justi
 .tutorial-heading>p:last-child,.tutorial-steps p { color:var(--muted); }
 .tutorial-steps { list-style:none; counter-reset:tutorial; padding:0; margin:0; display:grid; gap:20px; }
 .tutorial-steps>li { counter-increment:tutorial; position:relative; padding:32px 32px 32px 92px; background:white; border:1px solid var(--line); border-radius:6px; min-width:0; }
-.tutorial-steps>li::before { content:counter(tutorial, decimal-leading-zero); position:absolute; left:28px; top:28px; width:42px; height:42px; display:grid; place-items:center; border-radius:50%; background:var(--mint); color:var(--mint-ink); font-size:.85rem; font-weight:800; }
+.tutorial-steps>li::before { content:counter(tutorial, decimal-leading-zero); position:absolute; left:28px; top:28px; width:42px; height:42px; display:grid; place-items:center; border-radius:50%; background:transparent; border:2px solid #000; color:#000; font-size:.85rem; font-weight:800; }
 .tutorial-steps h3 { margin:2px 0 12px; font-size:1.35rem; line-height:1.3; letter-spacing:-.03em; }
 .tutorial-steps p { margin:12px 0 0; }
 .tutorial-steps strong { color:var(--ink); }
 .tutorial-steps p a { color:var(--accent); }
-.sheet-example { padding:16px; background:var(--paper); border-radius:6px; }
+.sheet-example { padding:16px; background:var(--paper); border:1px solid rgba(0,0,0,0.7); border-radius:6px; }
 .sheet-example span { display:block; margin-bottom:8px; font-size:.85rem; }
 .sheet-example code { font-size:.85rem; overflow-wrap:anywhere; }
 .sheet-example mark { background:var(--mint); color:var(--mint-ink); font-weight:700; }
