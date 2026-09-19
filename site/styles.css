@@ -36,6 +36,8 @@ footer { min-height:100px; border-top:1px solid var(--line); display:flex; justi
 .badge-correct { background:#176b35; }
 .badge-wrong { background:#982b2b; }
 .compare-item figcaption { margin-top:8px; color:var(--muted); font-size:.85rem; }
+.video { margin-top:16px; }
+.video iframe { display:block; width:100%; max-width:280px; aspect-ratio:9/16; border:1px solid var(--line); border-radius:6px; }
 .tutorial-steps figcaption { margin-top:10px; color:var(--muted); font-size:.85rem; }
 a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
 @media (max-width:700px) { .tutorial-steps>li { padding:24px 20px; }.tutorial-steps>li::before { position:static; margin-bottom:16px; }.tutorial-heading { margin-bottom:24px; }.compare { grid-template-columns:1fr; } }
